@@ -1,4 +1,4 @@
-### Minnaengine
+# Minnaengine
 
 its just a fork of easyrpg player. built for emscripten, for running Collective Unconscious.
 
@@ -36,18 +36,18 @@ more packages used by the engine can be seen in the cmakelists.txt.
 if you have installed every dependency properly, compiling the program is as simple as editing several parts of the given shell files and running all.ps1.
 the main build script all.ps1 is split into 4 parts:
 
-# config.ps1
+### config.ps1
 runs emcmake to create the ./build directory. you must replace the emsdk_env.ps1 path with your own here.
 
-# unzip.ps1
+### unzip.ps1
 this unzips the game files into ./build/games/default. replace the path to the game's .zip file with your own.
 this part uses 7zip. if you dont have it you might manually unzip the game into the same directory AND run ./resources/emscripten/indexgen.py afterwards, without moving it.
 for convenience, this doesnt unzip the sound archive yet.
 
-# build.ps1 
+### build.ps1 
 simply builds the source files. if there is an error thrown here it is because of the source files or linker errors.
 
-# server.ps1
+### server.ps1
 runs the local host in ./build. to play the game now, you can manually type the http address of the html file into your browser. clicking the .html directly wont work.
 
 

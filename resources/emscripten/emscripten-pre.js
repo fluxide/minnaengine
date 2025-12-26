@@ -208,6 +208,12 @@ globalThis.onPlayerTeleported = function (mapId, x, y) {
   });
 };
 
+globalThis.onSaveSlotUpdated = function (x) {
+  console.log("[onSaveSlotUpdated]", {
+    x
+  });
+};
+
 globalThis.onUpdateSystemGraphic = function (systemGraphic) {
   console.log("[onUpdateSystemGraphic]", systemGraphic);
 };
